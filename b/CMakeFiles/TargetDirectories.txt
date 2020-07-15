@@ -1,0 +1,9 @@
+/home/phuongdung/C/b/CMakeFiles/rebuild_cache.dir
+/home/phuongdung/C/b/CMakeFiles/pr.dir
+/home/phuongdung/C/b/CMakeFiles/edit_cache.dir
+/home/phuongdung/C/b/DebugPrintf/CMakeFiles/rebuild_cache.dir
+/home/phuongdung/C/b/DebugPrintf/CMakeFiles/debug_printf.dir
+/home/phuongdung/C/b/DebugPrintf/CMakeFiles/edit_cache.dir
+/home/phuongdung/C/b/libfdr/CMakeFiles/rebuild_cache.dir
+/home/phuongdung/C/b/libfdr/CMakeFiles/fdr.dir
+/home/phuongdung/C/b/libfdr/CMakeFiles/edit_cache.dir

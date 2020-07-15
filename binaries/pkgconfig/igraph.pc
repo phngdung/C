@@ -1,0 +1,12 @@
+prefix=/home/phuongdung/CAdvanced
+exec_prefix=${prefix}
+libdir=/home/phuongdung/CAdvanced/binaries
+includedir=/home/phuongdung/CAdvanced
+
+Name: libigraph
+Description: A library for creating and manipulating graphs
+Version: 0.8.1
+URL: http://igraph.org
+Libs: -L${libdir} -ligraph
+Libs.private: -lxml2 -lz -lm
+Cflags: -I${includedir}/igraph

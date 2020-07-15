@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/bt.dir/k58.c.o  -o bt ../binaries/libigraph.a -lm libfdr/libfdr.a 

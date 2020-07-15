@@ -1,0 +1,44 @@
+
+
+CHU Y: sửa tên file thực thi theo đúng đề bài - ở 2 dòng cuối
+
+đọc file fscanf(file,"%d\t%s",&int,s);
+          while (fscanf(f2, " %[^\n]s", url) > 0)
+    đọc số nguyên phải có &
+
+
+biến chuỗi thành số : atoi, atof
+
+mỗi hàm truyền vào tham số txt là docfile() chạy đầu nếu chưa chạy sẽ không có vector nên là bị 
+Lỗi chưa có dữ liệu đồ thi
+pr: vector.pmt:486: igraph_vector_size: Assertion `v->stor_begin != NULL' failed.
+
+vẽ đồ thị dot :  
+                FILE *out = fopen(argc > 1? argv[1]: "bt.dot", "w");;
+                 igraph_write_graph_dot(&g, out);
+                 fclose(out);
+
+chuẩn hóa :   // name[0]=toupper(name[0]);
+                for(int i=1;i<strlen(name);i++) name[i]=tolower(name[i]);
+                
+hủy đồ thị : igraph_destroy(&g)
+
+tính bán bậc ra k58: igraph_vector_t e;
+                 igraph_vector_init(&e,0);
+                igraph_degree(&g, &e, igraph_vss_all(), IGRAPH_OUT, IGRAPH_LOOPS);
+                for(int i=0; i<igraph_vector_size(&e);++i){
+                if(VECTOR(e)[i]>0) printf("%s\n",jrb_find_int(id_name,i)->val.s);
+
+    dùng maxvector(e, size(e)-1);
+đọc file :
+        "%[^:]" => đọc đến dấu 2 chấm thì dừng 
+
+        "%*[:]" => xóa hết dấu : ở đầu buffer của scanf, k lưu vào gì cả
+
+        " %[^>\n]s" => bỏ qua các khoảng trắng hoặc \n (nếu có) ở đầu buffer, rồi đọc cho đến \n hoặc > lưu vào chuỗi đọc được vào s
+
+        "%*[>]" => như "%*[:]"
+
+        "%[\n]" => Khác ở chỗ là nếu có \n ở đầu thì nó vẫn đọc
+
+       "%[^\n]"
