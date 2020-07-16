@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 2.8)
 project(test)
-add_subdirectory(DebugPrintf)
+add_subdirectory(DebugPrintf)  //thêm thư mục. để đọc các thư viện có trong nó xong build
 add_subdirectory(libfdr)
 
 set(CMAKE_BUILD_TYPE Debug)
-include_directories(${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/libfdr)
+include_directories(${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/libfdr) //chỉ ra những cái thư mục .c nằm ở đâu
 
 if (EXISTS "${CMAKE_SOURCE_DIR}/binaries/libigraph.a")
   set(USE_IGRAPH ON)
@@ -16,5 +16,5 @@ if (USE_IGRAPH)
   set(IGRAPH_LIBS igraph m)
 endif (USE_IGRAPH)
 
-add_executable(p argv.c)
-target_link_libraries(p ${IGRAPH_LIBS} fdr)
+add_executable(p menu.c)
+target_link_libraries(p ${IGRAPH_LIBS} fdr) //muốn thêm thư viện gì thì thêm vào đây

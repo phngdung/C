@@ -1,10 +1,23 @@
 
 
 CHU Y: sửa tên file thực thi theo đúng đề bài - ở 2 dòng cuối
+ 
+bài menu:    thành trì - 20182.c hoặc test.c
+    argv:    mạng id_ip -2015Dung.c
+            kho hàng- k61.c
+    ds kề:    ấn phẩm - k58.c
+    id_stt:    PageRank -test.c
+    
+            PHẢI CHUYỂN ID_STT;
+
 
 đọc file fscanf(file,"%d\t%s",&int,s);
           while (fscanf(f2, " %[^\n]s", url) > 0)
     đọc số nguyên phải có &
+đọc file kiểu đỉnh+  danh sách kề: k58.c
+    kiểu đỉnh+ cạnh : 2015Dung.c
+    các cạnh :  20182.c
+
 
 
 biến chuỗi thành số : atoi, atof
@@ -42,3 +55,12 @@ tính bán bậc ra k58: igraph_vector_t e;
         "%[\n]" => Khác ở chỗ là nếu có \n ở đầu thì nó vẫn đọc
 
        "%[^\n]"
+
+int vector :
+    void print_vector(igraph_vector_t *v) {
+     int i;
+    for (i = 0; i < igraph_vector_size(v); i++) {
+        printf("%d\t ", (long int) VECTOR(*v)[i]);
+    }
+    printf("\n");
+    }

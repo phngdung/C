@@ -6,12 +6,13 @@
 #include"igraph/igraph.h"
 #include"c-vector/cvector.h"
 #include"DebugPrintf/debug_printf.h"
-#define MAX 100
+#define MAX 20000
   igraph_t g,p;
   igraph_vector_t v,w,q,w1;
   int a,b,thanh, doan,i,j, choose, check, trongso;
   int mt[MAX][MAX];
   int A[MAX];
+  int *V0[MAX];
 void dske(int a){
   printf("\n- Castle %d :", a);
   for(int i=0;i<igraph_vector_size(&v);i++){
@@ -116,6 +117,24 @@ int x,y;
   }
  
 }
+
+
+void cvector_show(int* vt){
+	for(int i=0;i<cvector_size(vt);++i){
+		int k=vt[i];
+		printf("%d  ",k);
+	}
+	printf("\n");
+}
+
+void show_dsk(int **vt){ //danh sach ke
+    for(int i=1;i<=8;++i){
+    	printf("%d :",i);
+    	cvector_show(vt[i]);
+    }
+}
+
+
 int main(int argc, char *argv[]){
   FILE* inp;
   int x,y;
@@ -123,6 +142,7 @@ int main(int argc, char *argv[]){
   igraph_vector_init(&w,0);
    igraph_vector_init(&w1,0);
   igraph_vector_init(&q,0);
+  memset(V0,0,4*MAX);
 for(;;){
   printf("\n1. Doc ban do va in ra ma tran ke\n");
   printf("2. In ra danh sach ke.\n");
@@ -147,7 +167,8 @@ for(;;){
     igraph_vector_push_back(&v,a);
     igraph_vector_push_back(&v,b);
     igraph_vector_push_back(&w,trongso);
-      
+    cvector_push_back(V0[a],b);
+    cvector_push_back(V0[b],a); //V0 la ds ke
     mt[a][b]=mt[b][a]=trongso;
    }
   fclose(inp);
@@ -155,15 +176,19 @@ for(;;){
   printf("Ma tran ke cua do thi la:\n");
   for(i=1;i<=thanh;i++){
   for(j=1;j<=thanh;j++) printf("%d\t", mt[i][j]);
+  
   printf("\n");
   }
   igraph_create(&g,&v,0,0);
   igraph_create(&p,&q,0,0);
-  
+  //  cvector_show(V0[1]);
+   // printf("%d", V0[1][1]);
   break; 
   case 2:
   if(check!=1){ printf("Chua doc ban do. Moi chon 1\n"); break;}
-  for( int i=1; i<=thanh; i++) dske(i);
+   //for( int i=1; i<=thanh; i++) dske(i);
+    show_dsk(V0);
+    printf("\n");
   break;
   case 3:
   printf("3a. Danh sach thanh tri chi co the den no truc tiep tu mot thanh tri khac bang cach di bo: ");

@@ -48,6 +48,7 @@ for(int i=0;i<k;++i){
     fscanf(inp,"%d%d%d",&a,&a1,&ind);
     igraph_vector_push_back(&v,a);
     igraph_vector_push_back(&v,a1);
+CHU Y: sửa tên fi
     igraph_vector_push_back(&w,ind);
 }
 fclose(inp);

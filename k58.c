@@ -6,7 +6,7 @@
 #include"igraph/igraph.h"
 #include"c-vector/cvector.h"
 #include"DebugPrintf/debug_printf.h"
-#define MAX 1000
+#define MAX 20000
   igraph_t g;
   igraph_vector_t v,w;
   JRB id_name=NULL,name_id=NULL;

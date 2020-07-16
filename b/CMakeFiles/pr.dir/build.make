@@ -57,38 +57,38 @@ include CMakeFiles/pr.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pr.dir/flags.make
 
-CMakeFiles/pr.dir/test.c.o: CMakeFiles/pr.dir/flags.make
-CMakeFiles/pr.dir/test.c.o: ../test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phuongdung/C/b/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/pr.dir/test.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pr.dir/test.c.o   -c /home/phuongdung/C/test.c
+CMakeFiles/pr.dir/2015Dung.c.o: CMakeFiles/pr.dir/flags.make
+CMakeFiles/pr.dir/2015Dung.c.o: ../2015Dung.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/phuongdung/C/b/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/pr.dir/2015Dung.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/pr.dir/2015Dung.c.o   -c /home/phuongdung/C/2015Dung.c
 
-CMakeFiles/pr.dir/test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pr.dir/test.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phuongdung/C/test.c > CMakeFiles/pr.dir/test.c.i
+CMakeFiles/pr.dir/2015Dung.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pr.dir/2015Dung.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/phuongdung/C/2015Dung.c > CMakeFiles/pr.dir/2015Dung.c.i
 
-CMakeFiles/pr.dir/test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pr.dir/test.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phuongdung/C/test.c -o CMakeFiles/pr.dir/test.c.s
+CMakeFiles/pr.dir/2015Dung.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pr.dir/2015Dung.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/phuongdung/C/2015Dung.c -o CMakeFiles/pr.dir/2015Dung.c.s
 
-CMakeFiles/pr.dir/test.c.o.requires:
+CMakeFiles/pr.dir/2015Dung.c.o.requires:
 
-.PHONY : CMakeFiles/pr.dir/test.c.o.requires
+.PHONY : CMakeFiles/pr.dir/2015Dung.c.o.requires
 
-CMakeFiles/pr.dir/test.c.o.provides: CMakeFiles/pr.dir/test.c.o.requires
-	$(MAKE) -f CMakeFiles/pr.dir/build.make CMakeFiles/pr.dir/test.c.o.provides.build
-.PHONY : CMakeFiles/pr.dir/test.c.o.provides
+CMakeFiles/pr.dir/2015Dung.c.o.provides: CMakeFiles/pr.dir/2015Dung.c.o.requires
+	$(MAKE) -f CMakeFiles/pr.dir/build.make CMakeFiles/pr.dir/2015Dung.c.o.provides.build
+.PHONY : CMakeFiles/pr.dir/2015Dung.c.o.provides
 
-CMakeFiles/pr.dir/test.c.o.provides.build: CMakeFiles/pr.dir/test.c.o
+CMakeFiles/pr.dir/2015Dung.c.o.provides.build: CMakeFiles/pr.dir/2015Dung.c.o
 
 
 # Object files for target pr
 pr_OBJECTS = \
-"CMakeFiles/pr.dir/test.c.o"
+"CMakeFiles/pr.dir/2015Dung.c.o"
 
 # External object files for target pr
 pr_EXTERNAL_OBJECTS =
 
-pr: CMakeFiles/pr.dir/test.c.o
+pr: CMakeFiles/pr.dir/2015Dung.c.o
 pr: CMakeFiles/pr.dir/build.make
 pr: ../binaries/libigraph.a
 pr: libfdr/libfdr.a
@@ -101,7 +101,7 @@ CMakeFiles/pr.dir/build: pr
 
 .PHONY : CMakeFiles/pr.dir/build
 
-CMakeFiles/pr.dir/requires: CMakeFiles/pr.dir/test.c.o.requires
+CMakeFiles/pr.dir/requires: CMakeFiles/pr.dir/2015Dung.c.o.requires
 
 .PHONY : CMakeFiles/pr.dir/requires
 

@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pr
+# Target rules for targets named p
 
 # Build rule for target.
-pr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pr
-.PHONY : pr
+p : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 p
+.PHONY : p
 
 # fast build rule for target.
-pr/fast:
-	$(MAKE) -f CMakeFiles/pr.dir/build.make CMakeFiles/pr.dir/build
-.PHONY : pr/fast
+p/fast:
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/build
+.PHONY : p/fast
 
 #=============================================================================
 # Target rules for targets named debug_printf
@@ -149,32 +149,32 @@ fdr/fast:
 	$(MAKE) -f libfdr/CMakeFiles/fdr.dir/build.make libfdr/CMakeFiles/fdr.dir/build
 .PHONY : fdr/fast
 
-test.o: test.c.o
+argv.o: argv.c.o
 
-.PHONY : test.o
+.PHONY : argv.o
 
 # target to build an object file
-test.c.o:
-	$(MAKE) -f CMakeFiles/pr.dir/build.make CMakeFiles/pr.dir/test.c.o
-.PHONY : test.c.o
+argv.c.o:
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/argv.c.o
+.PHONY : argv.c.o
 
-test.i: test.c.i
+argv.i: argv.c.i
 
-.PHONY : test.i
+.PHONY : argv.i
 
 # target to preprocess a source file
-test.c.i:
-	$(MAKE) -f CMakeFiles/pr.dir/build.make CMakeFiles/pr.dir/test.c.i
-.PHONY : test.c.i
+argv.c.i:
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/argv.c.i
+.PHONY : argv.c.i
 
-test.s: test.c.s
+argv.s: argv.c.s
 
-.PHONY : test.s
+.PHONY : argv.s
 
 # target to generate assembly for a file
-test.c.s:
-	$(MAKE) -f CMakeFiles/pr.dir/build.make CMakeFiles/pr.dir/test.c.s
-.PHONY : test.c.s
+argv.c.s:
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/argv.c.s
+.PHONY : argv.c.s
 
 # Help Target
 help:
@@ -183,13 +183,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... pr"
+	@echo "... p"
 	@echo "... edit_cache"
 	@echo "... debug_printf"
 	@echo "... fdr"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... argv.o"
+	@echo "... argv.i"
+	@echo "... argv.s"
 .PHONY : help
 
 

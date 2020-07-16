@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/p.dir/argv.c.o  -o p ../binaries/libigraph.a -lm libfdr/libfdr.a 

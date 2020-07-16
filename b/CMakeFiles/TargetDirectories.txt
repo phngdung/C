@@ -1,5 +1,5 @@
 /home/phuongdung/C/b/CMakeFiles/rebuild_cache.dir
-/home/phuongdung/C/b/CMakeFiles/pr.dir
+/home/phuongdung/C/b/CMakeFiles/p.dir
 /home/phuongdung/C/b/CMakeFiles/edit_cache.dir
 /home/phuongdung/C/b/DebugPrintf/CMakeFiles/rebuild_cache.dir
 /home/phuongdung/C/b/DebugPrintf/CMakeFiles/debug_printf.dir

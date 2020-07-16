@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/phuongdung/C
 CMAKE_BINARY_DIR = /home/phuongdung/C/b
 
 #=============================================================================
-# Target rules for target CMakeFiles/pr.dir
+# Target rules for target CMakeFiles/p.dir
 
 # All Build rule for target.
-CMakeFiles/pr.dir/all: libfdr/CMakeFiles/fdr.dir/all
-	$(MAKE) -f CMakeFiles/pr.dir/build.make CMakeFiles/pr.dir/depend
-	$(MAKE) -f CMakeFiles/pr.dir/build.make CMakeFiles/pr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/phuongdung/C/b/CMakeFiles --progress-num=8,9 "Built target pr"
-.PHONY : CMakeFiles/pr.dir/all
+CMakeFiles/p.dir/all: libfdr/CMakeFiles/fdr.dir/all
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/depend
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/phuongdung/C/b/CMakeFiles --progress-num=8,9 "Built target p"
+.PHONY : CMakeFiles/p.dir/all
 
 # Include target in all.
-all: CMakeFiles/pr.dir/all
+all: CMakeFiles/p.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/pr.dir/rule: cmake_check_build_system
+CMakeFiles/p.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/phuongdung/C/b/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pr.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/p.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/phuongdung/C/b/CMakeFiles 0
-.PHONY : CMakeFiles/pr.dir/rule
+.PHONY : CMakeFiles/p.dir/rule
 
 # Convenience name for target.
-pr: CMakeFiles/pr.dir/rule
+p : CMakeFiles/p.dir/rule
 
-.PHONY : pr
-
-# clean rule for target.
-CMakeFiles/pr.dir/clean:
-	$(MAKE) -f CMakeFiles/pr.dir/build.make CMakeFiles/pr.dir/clean
-.PHONY : CMakeFiles/pr.dir/clean
+.PHONY : p
 
 # clean rule for target.
-clean: CMakeFiles/pr.dir/clean
+CMakeFiles/p.dir/clean:
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/clean
+.PHONY : CMakeFiles/p.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/p.dir/clean
 
 .PHONY : clean
 

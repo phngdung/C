@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/phuongdung/C/2015Dung.c
+/home/phuongdung/C/argv.c
 stdio.h
 -
 stdlib.h
@@ -21,14 +21,6 @@ igraph/igraph.h
 /home/phuongdung/C/igraph/igraph.h
 c-vector/cvector.h
 /home/phuongdung/C/c-vector/cvector.h
-DebugPrintf/debug_printf.h
-/home/phuongdung/C/DebugPrintf/debug_printf.h
-
-/home/phuongdung/C/DebugPrintf/debug_printf.h
-stdarg.h
--
-stdio.h
--
 
 /home/phuongdung/C/c-vector/cvector.h
 assert.h
